@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:valid,
+      textarea:valid {
+        background-color: greenyellow;
+      }
+
+      input:invalid,
+      textarea:invalid {
+        background-color: red;
+      }
+      .fileds{
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Login Form</legend>
+        <label>Name</label> <br />
+        <input required placeholder="abc@123" /> <br />
+        <label>Email</label> <br />
+        <input required placeholder="abc@gmail.com"/> <br />
+        <label>Password</label> <br />
+        <input required/> <br />
+        <input type="submit" /> <br />
+      </fieldset>
+    </form>
+    <div class="fileds">
+
+    <input /><br />
+    <p>
+        disabled <input type="text" disabled>
+    </p>
+    <p>
+       size is 40 <input size="40" />
+    </p>
+    <p>
+       input having minlength 3  and maxlength 6 <input minlength="3" maxlength="6" />
+    </p>
+    <p>
+        textarea having minlength 3 and maxlength 6        <textarea minlength="3" maxlength="6"></textarea>
+    </p>
+    <p>
+        input type is number having min value 7  and max value 10
+        <input type="number" min="7" max="10" />
+    </p>
+    <p>
+        input with having autofocus and accept only words
+        <input autofocus type="text" pattern="\w{3,6}" />
+    </p>
+    <p>
+        input with having autofocus and accept only digits
+        <input autofocus type="password" pattern="\d{4,4}" />
+    </p>
+    <p>
+
+        <input autofocus placeholder="abc@gmail.com" />
+    </p>
+    <p>
+        <label for="mess">
+            hover this to find the message 
+        </label>
+        <span title="Hi" id="mess">Hi</span>
+    </p>
+    <span title="Hello Everyopne, awadaw, awd">Hello</span>
+</div>
+  </body>
+</html> 
