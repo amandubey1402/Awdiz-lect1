@@ -1,5 +1,5 @@
 .padding{
-    border: 2px solid red;
+    border: 2px solid black;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -13,7 +13,7 @@
     outline-width: 5px;
     padding: 10px;
     outline-color: red;
-    border: 5px solid green;
+    border: 5px solid black;
     text-align: center;
 }
 .textColor{
@@ -40,7 +40,7 @@
 }
 .textDecLine1{
     font-size: larger;
-    color: red;
+    color: violet;
     text-decoration-line: underline;
 }
 .textDecLine2{

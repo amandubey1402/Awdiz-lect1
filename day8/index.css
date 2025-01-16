@@ -1,0 +1,106 @@
+
+.child1{
+    width: 100%;
+    display: flex;
+    border: 2px solid;
+    margin-bottom: 1rem;
+}
+.child1>div{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+}
+.child2>div{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    
+}
+.child2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    margin-bottom: 1rem;
+}
+.child3>div{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+}
+.child3{
+    width: 100%;
+    border: 2px solid;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 1rem;
+}
+
+.child4>div{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+}
+.child4{
+    width: 100%;
+    border: 2px solid;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction:column-reverse;
+}
+
+.child5>div{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+}
+.child5{
+    width: 100%;
+    border: 2px solid;
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction:column;
+}
+.child6>div{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+
+}
+.child6{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+    margin-bottom: 1rem;
+
+}
+
+.child7>div{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+}
+.child7{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    border: 2px solid;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.child8>div{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+}
+.child8{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    border: 2px solid;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
