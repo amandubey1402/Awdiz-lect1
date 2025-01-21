@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Properties Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            margin: 20px;
+            padding: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 16px;
+            width: 100px;
+            height: 100px;
+            transition: all 0.3s ease;
+        }
+
+        /* flex-shrink Property */
+        .flex-shrink {
+            flex-shrink: 1; /* This box will shrink when there's less space */
+        }
+
+        /* flex-grow Property */
+        .flex-grow {
+            flex-grow: 1; /* This box will grow to take up extra space */
+        }
+
+        /* flex-basis Property */
+        .flex-basis {
+            flex-basis: 200px; /* This box has a fixed starting size of 200px */
+        }
+
+        /* flex-basis shorthand Property */
+        .flex-basis-shorthand {
+            flex: 1 1 200px; /* Same as flex-grow: 1, flex-shrink: 1, flex-basis: 200px */
+        }
+
+        /* align-self Property */
+        .self-align {
+            align-self: flex-start; /* This box aligns itself to the start of the flex container */
+        }
+
+        .flex-container-alt {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            border: 2px dashed #333;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+        }
+
+        /* For containers with a specific background for better visual distinction */
+        .container-title {
+            text-align: center;
+            width: 100%;
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- flex-shrink demonstration -->
+    <div class="container-title">Flex-Shrink Property</div>
+    <div class="flex-container">
+        <div class="box flex-shrink">flex-shrink</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <!-- flex-grow demonstration -->
+    <div class="container-title">Flex-Grow Property</div>
+    <div class="flex-container">
+        <div class="box flex-grow">flex-grow</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <!-- flex-basis demonstration -->
+    <div class="container-title">Flex-Basis Property</div>
+    <div class="flex-container">
+        <div class="box flex-basis">flex-basis</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <!-- flex shorthand (flex-grow, flex-shrink, flex-basis) demonstration -->
+    <div class="container-title">Flex Shorthand (flex-grow, flex-shrink, flex-basis)</div>
+    <div class="flex-container">
+        <div class="box flex-basis-shorthand">flex (shorthand)</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <!-- align-self demonstration -->
+    <div class="container-title">Align-Self Property</div>
+    <div class="flex-container">
+        <div class="box self-align">align-self</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+</body>
+</html>
