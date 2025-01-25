@@ -51,7 +51,7 @@ if(alpha=="A"||alpha=="a"){
 else{
     console.log("It is consonant")
 }
-let num=4;
+var num=4;
 if(num>0){
     console.log("it is positive number")
 }
